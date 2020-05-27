@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="centerStuff">
+      <div class="lifter">
+        <div class="boldTe">Hello</div>
+        <div class="boldTe">Harshit</div>
+        <div class="boldTe">How</div>
+        <div class="boldTe">Are</div>
+        <div class="boldTe">You</div>
+      </div>
+      <div class="hidden">
+        <div class="boldTe">Hello</div>
+        <div class="boldTe">Harshit</div>
+        <div class="boldTe">How</div>
+        <div class="boldTe">Are</div>
+        <div class="boldTe">You</div>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    .centerStuff {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .boldTe {
+      font-size: larger;
+    }
+
+    .lifter {
+      padding: 100px;
+      background-color: grey;
+      border-radius: 10px;
+      transform: translateY(0px);
+      transition: all 1s;
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+    }
+    .lifter:hover {
+      transform: translateY(-100px);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</html>
